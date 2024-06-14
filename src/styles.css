@@ -1,0 +1,104 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(54,54,54);
+    background: linear-gradient(0deg, rgba(54,54,54,1) 0%, rgba(167,166,166,1) 100%);
+}
+
+.title{
+    font-size: 50px;
+    color: aliceblue;
+    animation: showTitle 2s;
+}
+
+.containerInput{
+    background-color: #00000023;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px #00000050;
+}
+
+.containerInput input{
+    background-color: #5e5e5e;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 8px;
+}
+
+
+
+.containerInput input::placeholder{
+    color: #aaaaaa;
+    font-size: 16px;
+    font-style: italic;
+
+}
+
+.containerInput button{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    transition: 1s;  
+}
+
+.containerInput button:hover{
+    transform: scale(1.3); 
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;
+    
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 30px;
+
+}
+
+.main span{
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+@media (max-width: 700px){
+    .title{
+        font-size: 28px;
+    }
+
+    .main h2{
+        font-size: 28px;
+    }
+
+    .main{
+        width: 80%;
+    }
+}
+
+
+@keyframes showTitle {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
