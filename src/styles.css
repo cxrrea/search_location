@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     background: rgb(54,54,54);
-    background: linear-gradient(0deg, rgba(54,54,54,1) 0%, rgba(167,166,166,1) 100%);
+    background: linear-gradient(0deg, rgba(54,54,54,1) 0%, rgb(134, 134, 134) 100%);
 }
 
 .title{
@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #00000088;
     width: 500px;
     border-radius: 8px;
     
@@ -70,12 +70,14 @@
 .main h2{
     margin: 16px 0;
     font-size: 30px;
+    color: #fff;
 
 }
 
 .main span{
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 300;
+    color: #fff;
 
 }
 
